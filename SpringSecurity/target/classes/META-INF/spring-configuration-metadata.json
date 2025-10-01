@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "name": "app.jwt",
+      "type": "duonghao.vn.config.JwtConfig",
+      "sourceType": "duonghao.vn.config.JwtConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.jwt.expiration-ms",
+      "type": "java.lang.Integer",
+      "sourceType": "duonghao.vn.config.JwtConfig"
+    },
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "duonghao.vn.config.JwtConfig"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

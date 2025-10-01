@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>User Page</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>User Page</h1>
+    <p>Users and admins can see this. Current user: <span sec:authentication="name"></span></p>
+    <nav>
+        <a th:href="@{/home}">Back to Home</a> |
+        <a th:href="@{/admin}" sec:authorize="hasRole('ADMIN')">Admin Panel</a> |
+        <form th:action="@{/logout}" method="post">
+            <button type="submit">Logout</button>
+        </form>
+    </nav>
+</body>
+</html>
